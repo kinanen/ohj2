@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="217.0" prefWidth="178.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="HT2022.HarjoitusController">
+   <children>
+      <Button fx:id="ButtonTallenna" layoutX="99.0" layoutY="181.0" mnemonicParsing="false" onAction="#tallennaHarjoitus" text="Tallenna" />
+      <TextField fx:id="TextFieldPaiva" layoutX="7.0" layoutY="45.0" prefHeight="25.0" prefWidth="161.0" promptText="Päivä" />
+      <TextField fx:id="TextFieldAika" layoutX="7.0" layoutY="76.0" promptText="Aika" />
+      <TextField fx:id="TextFieldSali" layoutX="7.0" layoutY="109.0" promptText="Sali" />
+      <TextField fx:id="TextFieldPaikkoja" layoutX="7.0" layoutY="142.0" promptText="Paikkoja" />
+      <ComboBox fx:id="ComboBoxLaji" layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="161.0" promptText="Laji" />
+      <Button fx:id="ButtonPeruuta" layoutX="31.0" layoutY="181.0" mnemonicParsing="false" onAction="#peruutaHarjoitus" prefHeight="25.0" prefWidth="65.0" text="Peruuta" />
+   </children>
+</AnchorPane>

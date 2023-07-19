@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="269.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HT2022.LisaaLajiController">
+   <children>
+      <TextField fx:id="TextFieldLaji" layoutX="20.0" layoutY="28.0" promptText="Laji" />
+      <TextField fx:id="textFieldHarjoitusTasot" layoutX="20.0" layoutY="61.0" promptText="syötä lajin harjoitustasot" />
+      <Button fx:id="ButtonLisaa" layoutX="134.0" layoutY="87.0" mnemonicParsing="false" onAction="#LisaaHarjoitustaso" text="Lisää" />
+      <Button fx:id="ButtonTallenna" layoutX="116.0" layoutY="228.0" mnemonicParsing="false" onAction="#Tallenna" text="Tallenna" />
+      <Button fx:id="ButtonPeruuta" layoutX="47.0" layoutY="228.0" mnemonicParsing="false" onAction="#Peruuta" text="Peruuta" />
+      <ListView fx:id="ListViewHarjoitusTasot" layoutX="20.0" layoutY="119.0" prefHeight="75.0" prefWidth="161.0" />
+      <Button fx:id="ButtonPoistaHarjoitustaso" layoutX="128.0" layoutY="195.0" mnemonicParsing="false" onAction="#PoistaHarjoitustaso" text="Poista" />
+   </children>
+</AnchorPane>

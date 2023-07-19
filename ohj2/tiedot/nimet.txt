@@ -1,0 +1,5 @@
+Otso,Kinanen,15.10.1987,Kaikukatu 12 c 10,00190,Helsinki,100:103:104:105:101
+Timo,Karhu,1.7.1977,Toripolku 6 d 3,00760,Helsinki,100
+Toni,Mikkonen,6.8.1967,Järvipuisto 1 c 18,10700,Tuusula,100:103:101:102
+Sami,Joukainen,15.10.2000,Savikuja 6,00100,Helsinki,100
+Santeri,Makkonen,15.9.2000,Torikatu 7,00900,Helsinki,100:103

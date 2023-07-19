@@ -1,0 +1,6 @@
+Brasilialainen jujitsu,Valkoinen vyö:Sininen vyö:Purppura vyö:Ruskea vyö:Musta vyö
+Thai Nyrkkeily,Kuntoryhmä:Harrasteryhmä:Kilparyhmä
+Nyrkkeliy,Aloittelija:Harrastaja:Kilparyhmä
+Judo,Aloit:Kilpa
+Aikido,Valkoinen:Keltainen:Musta
+Potkunyrkkeily,Aloittelija:Harraste:Kilpa

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import fi.jyu.mit.fxgui.RadioButtonChooser?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HT2022.Ht2022GUIController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Käyttäjät">
+            <items>
+            	<MenuItem fx:id="vaihdaKayttaja" mnemonicParsing="false" onAction="#vaihdaKayttaja" text="Vaihda Käyttäjää" />
+              	<MenuItem fx:id="lisaaHenkilo" mnemonicParsing="false" onAction="#lisaaHenkilo" text="Lisää Henkilö" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Lajit">
+            <items>
+                <MenuItem fx:id="lisaaLaji" mnemonicParsing="false" onAction="#lisaaLaji" text="Lisää Laji" />
+                <MenuItem fx:id="muokkaaLaji" mnemonicParsing="false" onAction="#muokkaaLaji" text="Muokkaa Lajia" />
+                <MenuItem fx:id="poistaLaji" mnemonicParsing="false" onAction="#poistaLaji" text="Poista valittu Laji" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Harjoitukset">
+            <items>
+                <MenuItem fx:id="lisaaHarjoitus" mnemonicParsing="false" onAction="#lisaaHarjoitus" text="Lisää Harjoitus" />
+                <MenuItem fx:id="muokkaaHarjoitus" mnemonicParsing="false" onAction="#muokkaaHarjoitus" text="Muokkaa Harjoitusta" />
+                <MenuItem fx:id="poistaHarjoitus" mnemonicParsing="false" onAction="#poistaHarjoitus" text="Poista Valittu Harjoitus" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="463.0" prefWidth="227.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tulevat harjoitukset" />
+            <ListChooser fx:id="ListChooserTulevatHarjoitukset" onMouseClicked="#NaytaValittuHarjoitus" prefHeight="167.0" prefWidth="217.0" />
+            <Label text="Edelliset omat harjoitukset" />
+            <ListChooser fx:id="ListChooserAiemmatHarjoitukset" onMouseClicked="#NaytaValittuHarjoitus" prefHeight="160.0" prefWidth="217.0" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="391.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" prefHeight="9.0" prefWidth="128.0" text="Valittu harjoitus" />
+            <TextArea fx:id="valittuHarjoitus" layoutX="14.0" layoutY="17.0" prefHeight="345.0" prefWidth="250.0" wrapText="true" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="437.0" prefWidth="230.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="9.0" prefWidth="128.0" text="Omat tiedot" />
+            <TextField fx:id="etunimi" layoutY="17.0" text="etunimi" />
+            <TextField fx:id="sukunimi" layoutY="42.0" text="Kinanen" />
+            <TextField fx:id="syntymaaika" layoutY="67.0" text="17.11.1990" />
+            <TextField fx:id="osoite" layoutY="92.0" text="Bulevardi 34 a 1" />
+            <TextField fx:id="postinumero" layoutY="117.0" text="00120" />
+            <TextField fx:id="kunta" layoutY="142.0" text="Helsinki" />
+            <Button fx:id="muokkaaHlo" layoutY="176.0" mnemonicParsing="false" onAction="#avaaHloTied" text="Muokkkaa" />
+            <Label layoutY="246.0" prefHeight="9.0" prefWidth="128.0" text="Lajit" />
+            <RadioButtonChooser />
+            <ListChooser fx:id="omatLajit" layoutY="211.0" prefHeight="152.0" prefWidth="160.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Pane>
+   </right>
+</BorderPane>

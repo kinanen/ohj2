@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import fi.jyu.mit.fxgui.ListChooser?>
+<?import fi.jyu.mit.fxgui.RadioButtonChooser?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="561.0" prefWidth="185.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HT2022.HenkiloController">
+   <children>
+      <BorderPane layoutX="-11.0" layoutY="-53.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="9.0" prefWidth="128.0" text="Omat tiedot" />
+      <TextField fx:id="etunimi" layoutX="10.0" layoutY="27.0" text="Otso" />
+      <TextField fx:id="sukunimi" layoutX="10.0" layoutY="52.0" text="Kinanen" />
+      <TextField fx:id="syntymaaika" layoutX="10.0" layoutY="77.0" text="17.11.1990" />
+      <TextField fx:id="osoite" layoutX="10.0" layoutY="102.0" text="Bulevardi 34 a 1" />
+      <TextField fx:id="postinumero" layoutX="10.0" layoutY="127.0" text="00120" />
+      <TextField fx:id="kunta" layoutX="10.0" layoutY="152.0" text="Helsinki" />
+      <Button fx:id="ButtonTallenna" layoutX="104.0" layoutY="521.0" mnemonicParsing="false" onAction="#tallennaHlo" prefHeight="17.0" prefWidth="65.0" text="Tallenna" />
+      <Label layoutX="11.0" layoutY="188.0" prefHeight="9.0" prefWidth="128.0" text="Kaikki lajit" />
+      <RadioButtonChooser layoutX="10.0" layoutY="10.0" />
+      <ListChooser fx:id="listChooserKaikkiLajit" layoutX="11.0" layoutY="205.0" prefHeight="109.0" prefWidth="160.0" />
+      <Button fx:id="lisaaLaji" layoutX="123.0" layoutY="316.0" mnemonicParsing="false" onAction="#lisaaLaji" text="Lisää" />
+      <ListChooser fx:id="listChooserOmatLajit" layoutX="11.0" layoutY="359.0" prefHeight="109.0" prefWidth="160.0" />
+      <Button fx:id="poistaLaji" layoutX="120.0" layoutY="468.0" mnemonicParsing="false" onAction="#poistaLaji" text="Poista" />
+      <Label layoutX="11.0" layoutY="342.0" prefHeight="9.0" prefWidth="128.0" text="Omat lajit" />
+   </children>
+</AnchorPane>
